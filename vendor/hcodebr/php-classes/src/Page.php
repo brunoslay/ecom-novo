@@ -18,8 +18,8 @@ class Page {
 		$this->options = array_merge($this->defaults, $opts);
 
 		$config = array(
-			"tpl_dir"       => $_SERVER["DOCUMENT_ROOT"].$tpl_dir,
-			"cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/views-cache/",
+			"tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/git/ecommerce".$tpl_dir,
+			"cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/git/ecommerce/views-cache/",
 			//"debug"         => true // set to false to improve the speed
 	   );
 

@@ -57,7 +57,7 @@ class User extends Model {
 			||
 			(bool)$_SESSION[User::SESSION]["inadmin"] !== $inadmin // é admin?
 		) {
-			header("Location: /admin/login");
+			header("Location: /git/ecommerce/admin/login");
 			exit;
 		}
 	}

@@ -52,7 +52,7 @@ $app->post("/admin/login/", function() {
 
 	User::login($_POST["login"], $_POST["password"]);
 
-	header("Location: /admin");
+	header("Location: /git/ecommerce/admin");
 	exit;
 
 });
@@ -60,7 +60,7 @@ $app->post("/admin/login/", function() {
 $app->get("/admin/logout/", function(){
 	User::logout();
 
-	header("Location: /admin/login");
+	header("Location: /git/ecommerce/admin/login");
 	exit;
 });
 
